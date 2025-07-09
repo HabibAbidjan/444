@@ -1,27 +1,4 @@
-# === TO'LIQ ISHLAYDIGAN TELEGRAM GAME BOT KODI ===
-# O'yinlar: Mines, Aviator, Dice
-# Tugmalar: balans, hisob toldirish, pul chiqarish, bonus, referal
 
-from keep_alive import keep_alive
-from telebot import TeleBot, types
-import random
-import threading
-import time
-import os
-import datetime
-
-TOKEN = "8161107014:AAGBWEYVxie7-pB4-2FoGCPjCv_sl0yHogc"
-bot = TeleBot(TOKEN)
-
-ADMIN_ID = 5815294733  # Admin ID
-
-user_balances = {}
-lucky_users = set()
-global_azart_level = 0  # Azart boshlanishda o‘chiq
-
-user_mines_game = {}
-user_aviator = {}
-user_chicken_states = {}
 tic_tac_toe_states = {}
 
 # Qo‘shimcha sozlamalar va foydalanuvchi ma'lumotlar
